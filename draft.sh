@@ -22,6 +22,7 @@ LOCAL_STORAGE_PATH="/path/to/local/storage" # path to store backups
 
 error_occurred=false
 retry_count=0
+retry_count_notif=0
 max_retries=3
 
 ################
@@ -97,7 +98,6 @@ log "Script execution completed"
 #########################
 #### Notify Telegram ####
 #########################
-retry_count_notif=0
 
 while [ $retry_count_notif -lt $max_retries ]; do
 
